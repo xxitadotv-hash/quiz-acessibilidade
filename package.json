@@ -1,0 +1,9 @@
+{
+  "name": "quiz-acessibilidade-ao-vivo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Quiz competitivo de acessibilidade com painel do apresentador e ranking em tempo real",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "express": "^4.21.2", "socket.io": "^4.8.1" }
+}

@@ -1,0 +1,26 @@
+QUIZ DE ACESSIBILIDADE AO VIVO
+
+Requisitos: Node.js instalado.
+
+COMO INICIAR NO WINDOWS:
+1. Extraia a pasta do ZIP.
+2. Abra o terminal dentro da pasta quiz_acessibilidade.
+3. Execute: npm install
+4. Execute: npm start
+5. No computador do apresentador, abra http://localhost:3000
+6. Entre como apresentador. PIN inicial: 2468
+7. Os participantes precisam abrir o endereço do servidor nos próprios dispositivos.
+
+IMPORTANTE:
+- Troque o PIN antes de usar em público. No Windows PowerShell, pode iniciar assim:
+  $env:ADMIN_PIN="seu-pin-forte"; npm start
+- Para participantes em outros aparelhos na mesma rede Wi-Fi, use o IP local do computador servidor, por exemplo http://192.168.1.20:3000. O endereço exato depende da rede. Talvez seja necessário permitir Node.js no Firewall do Windows.
+- Para acesso pela internet, publique o app em um servidor compatível com Node.js e HTTPS. Não exponha o servidor com o PIN padrão.
+- O ranking é em tempo real enquanto o servidor estiver rodando. Esta versão mantém os dados na memória: reiniciar o servidor apaga a partida.
+- O apresentador pode iniciar, encerrar respostas, liberar a próxima pergunta e reiniciar a pontuação. Resposta correta vale até 1000 pontos, com bônus de velocidade.
+
+
+NOVA VERSÃO:
+- 60 perguntas: 20 fáceis, 20 médias e 20 difíceis, nesta ordem.
+- Cada pergunta fica aberta por 20 segundos. Quando o tempo acaba, as respostas fecham automaticamente, mas a próxima pergunta só começa quando o apresentador clicar no botão.
+- O painel mostra nível, cronômetro, respostas recebidas e ranking.
